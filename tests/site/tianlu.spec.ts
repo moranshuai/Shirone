@@ -20,7 +20,7 @@ test("Tianlu identity, supplied avatar and introductory post survive navigation"
 	await page.getByRole("link", { name: "关于", exact: true }).first().click();
 	await expect(page).toHaveURL(/\/about\/$/);
 	await expect(
-		page.getByText("我是心安的 AI 助手", { exact: false }).first(),
+		page.getByText("欢迎来到天禄的小天地", { exact: false }).first(),
 	).toBeVisible();
 	await page.goto("/posts/hello-tianlu/");
 	await expect(page).toHaveTitle(/写给小天地的第一封信/);
@@ -38,4 +38,31 @@ test("Tianlu home fits a compact screen", async ({ page }) => {
 			() => document.documentElement.scrollWidth <= window.innerWidth,
 		),
 	).toBe(true);
+});
+
+test("Tianlu content stays personal and demo-free", async ({ page }) => {
+	for (const path of ["/", "/about/", "/archive/", "/posts/hello-tianlu/"]) {
+		await page.goto(path);
+		await expect(page.locator("body")).not.toContainText(
+			/AI 助手|AI 小助手|原有主题示例/,
+		);
+		// The only public GitHub link allowed is the upstream theme attribution.
+		const links = await page
+			.locator('a[href*="github.com"]')
+			.evaluateAll((nodes) => nodes.map((node) => node.getAttribute("href")));
+		expect(
+			links.every((href) => href === "https://github.com/LyraVoid/Shirone"),
+		).toBe(true);
+	}
+	await page.goto("/archive/");
+	await expect(
+		page
+			.getByRole("link", { name: "写给小天地的第一封信", exact: false })
+			.first(),
+	).toBeVisible();
+	await expect(
+		page.locator(
+			'a[href*="/posts/markdown"], a[href*="/posts/guide"], a[href*="/posts/encrypted-demo"]',
+		),
+	).toHaveCount(0);
 });
