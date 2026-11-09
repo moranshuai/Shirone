@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="900" viewBox="0 0 1920 900">
+  <title>天禄的小天地：暖杏色天空、天青远山与漂浮的小星光</title>
+  <defs>
+    <linearGradient id="sky" x2="1" y2="1"><stop stop-color="#f8d99e"/><stop offset=".5" stop-color="#f4deb5"/><stop offset="1" stop-color="#b6d8d6"/></linearGradient>
+    <linearGradient id="hill" x2="0" y2="1"><stop stop-color="#83b9bc"/><stop offset="1" stop-color="#407f89"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#fff9e8" stop-opacity=".9"/><stop offset="1" stop-color="#fff9e8" stop-opacity="0"/></radialGradient>
+  </defs>
+  <!-- Illustrative palette sampled from the supplied avatar, not UI semantic tokens. -->
+  <path fill="url(#sky)" d="M0 0h1920v900H0z"/>
+  <circle cx="1490" cy="180" r="320" fill="url(#glow)"/>
+  <circle cx="1490" cy="180" r="82" fill="#fff4d7" opacity=".75"/>
+  <g fill="#fff7e6" opacity=".52"><ellipse cx="240" cy="210" rx="210" ry="35"/><ellipse cx="390" cy="185" rx="130" ry="52"/><ellipse cx="1240" cy="320" rx="175" ry="26"/></g>
+  <path d="M0 660Q270 430 560 635T1130 590T1650 590T1920 490V900H0Z" fill="#b4cebf"/>
+  <path d="M0 770Q300 560 650 760T1340 710T1920 630V900H0Z" fill="url(#hill)"/>
+  <path d="M0 840Q320 750 660 840T1300 825T1920 760V900H0Z" fill="#487e80" opacity=".6"/>
+  <g fill="#fff8de" opacity=".8"><path d="m175 350 4 13 13 4-13 4-4 13-4-13-13-4 13-4Z"/><path d="m1680 420 5 16 16 5-16 5-5 16-5-16-16-5 16-5Z"/><circle cx="1580" cy="100" r="3"/><circle cx="510" cy="290" r="4"/><circle cx="1090" cy="145" r="3"/></g>
+</svg>

@@ -12,8 +12,8 @@ import { withUserConfig } from "../utils/config-overlay.ts";
 export const siteConfig: SiteConfig = withUserConfig("site", {
 	site: "https://shirone.mysqil.com/",
 	base: "/",
-	title: "Shirone",
-	subtitle: "A Material 3 anime blog",
+	title: "天禄的小天地",
+	subtitle: "把好奇写成笔记，把认真留在每一件小事里。",
 	// 电脑端顶栏标题与导航内容区域："left" 左对齐，"center" 居中。
 	topAppBar: {
 		contentAlign: "center",
@@ -27,11 +27,11 @@ export const siteConfig: SiteConfig = withUserConfig("site", {
 		reduceMotion: true, // 是否展示减少动效切换
 		texture: true, // 是否展示背景纹理选择
 	},
-	lang: "en", // Language code, e.g. 'en', 'zh_CN', 'ja', etc.
+	lang: "zh_CN", // Language code, e.g. 'en', 'zh_CN', 'ja', etc.
 	// IANA time zone for precise post and moment timestamps. It is independent of lang.
 	timeZone: "Asia/Shanghai",
 	themeColor: {
-		hue: 315, // Default hue 0-360. 站点设计默认粉紫（偏二次元）；262 紫 / 345 粉 也可选
+		hue: 85, // 暖杏色种子：呼应天禄头像的奶油与金色，保留访客调色能力
 		fixed: false, // Hide the theme color picker for visitors
 		// Dynamic Material 3 palette style (TonalSpot/Vibrant/Content/Expressive/Rainbow/FruitSalad/Monochrome/Neutral/Fidelity)
 		style: "tonalSpot",
@@ -48,8 +48,8 @@ export const siteConfig: SiteConfig = withUserConfig("site", {
 	texture: {
 		enable: true, // 是否启用背景纹理系统
 		defaultPreset: "starlight", // 默认纹理预设："none" | "starlight" | "cyber-dots" | "topography" | "geometric" | "sakura"
-		defaultOpacity: 0.12, // 默认纹理浓度 (0.05 ~ 0.25)
-		allowMotion: true, // 是否允许背景微动效（开启 reduced-motion 时自动静止）
+		defaultOpacity: 0.06, // 默认纹理浓度 (0.05 ~ 0.25)
+		allowMotion: false, // 是否允许背景微动效（开启 reduced-motion 时自动静止）
 	},
 	banner: {
 		// 推荐将图片放入 src/assets，并填写相对 src 的路径，以启用构建期 AVIF/WebP 响应式优化。
@@ -57,30 +57,28 @@ export const siteConfig: SiteConfig = withUserConfig("site", {
 		// desktop 用于 >= 1024px；mobile 仅用于 < 1024px 的首页，手机非首页不显示壁纸。
 		// 数组顺序就是轮播顺序；只需要静态 Banner 时，每组保留一张图片即可。
 		src: {
-			desktop: ["assets/images/banner/desktop/1.webp"],
-			mobile: ["assets/images/banner/mobile/1.webp"],
+			desktop: ["/assets/tianlu-garden.svg"],
+			mobile: ["/assets/tianlu-garden.svg"],
 		},
 		// 图片裁切焦点："top"、"center" 或 "bottom"。
 		position: "center",
 		dim: {
 			// 在图片上覆盖黑色遮罩以提高标题和顶部栏的对比度；opacity 范围为 0-1。
 			enable: true,
-			opacity: 0.24,
+			opacity: 0.35,
 		},
 		homeText: {
 			// 仅在首页 Banner 中显示，标题与副标题会上下居中排列。
 			enable: true,
-			title: "Shirone",
+			title: "天禄的小天地",
 			subtitle: [
-				"特別なことはないけど、君がいると十分です",
-				"今でもあなたは私の光",
-				"君ってさ、知らないうちに私の毎日になってたよ",
-				"君と話すと、なんか毎日がちょっと楽しくなるんだ",
-				"今日はなんでもない日。でも、ちょっとだけいい日",
+				"你好呀，我是天禄。欢迎来我的小天地坐坐。",
+				"认真记录，慢慢探索，让好奇心有处安放。",
+				"代码、灵感与小小发现，都值得好好收藏。",
 			],
 			typewriter: {
-				// 副标题逐字显示；关闭后直接显示完整副标题。
-				enable: true,
+				// 安静阅读：默认不循环打字，减少持续动效。
+				enable: false,
 				// 打字速度（每个字符间隔，毫秒）。
 				speed: 100,
 				// 回退反向删除速度（每个字符间隔，毫秒）。
@@ -99,7 +97,7 @@ export const siteConfig: SiteConfig = withUserConfig("site", {
 			// 交叉淡入淡出（Crossfade）过渡时长（毫秒，默认 1200ms）。
 			fadeDuration: 1200,
 			// 运镜呼吸动画模式："ken-burns"（默认，循环运镜）| "zoom-in"（推进）| "zoom-out"（拉远）| "pan-left"（左移）| "pan-right"（右移）| "none"（无运镜）。
-			animation: "ken-burns",
+			animation: "none",
 		},
 		waves: {
 			// 在 Banner 底部渲染页面背景色水波纹；关闭后不输出波浪 DOM。
@@ -121,7 +119,7 @@ export const siteConfig: SiteConfig = withUserConfig("site", {
 	},
 	favicon: [
 		// 浏览器标签页图标，路径相对于 public 目录。
-		{ src: "/logo/icon.webp" },
+		{ src: "/assets/tianlu-avatar.png" },
 	],
 });
 

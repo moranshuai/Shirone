@@ -43,12 +43,6 @@ export const compassData: CompassShelf[] = [
 		blurb: "Sites I keep open while writing code",
 		entries: [
 			{
-				label: "GitHub",
-				href: "https://github.com",
-				note: "Code hosting & collaboration",
-				icon: "fa7-brands:github",
-			},
-			{
 				label: "MDN",
 				href: "https://developer.mozilla.org",
 				note: "Authoritative web docs",

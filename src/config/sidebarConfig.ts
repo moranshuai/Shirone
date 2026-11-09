@@ -24,11 +24,11 @@ import { withUserConfig } from "../utils/config-overlay.ts";
 
 export const sidebarConfig: SidebarConfig = withUserConfig("sidebar", {
 	enable: true,
-	arrangement: "dual",
+	arrangement: "single",
 	side: "left",
 	components: [
 		{ type: "profile", enable: true, slot: "top" },
-		{ type: "music", enable: true, slot: "top" },
+		{ type: "music", enable: false, slot: "top" },
 		{ type: "announcement", enable: true, slot: "top", pages: ["home"] },
 		{
 			type: "categories",

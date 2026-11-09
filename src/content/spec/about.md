@@ -1,26 +1,19 @@
-# About Shirone
+---
+title: 关于
+---
 
-Welcome to the demo site of **Shirone** (白音) — an expressive, anime-inspired blog theme built on the **Material 3 Expressive (M3E)** design system.
+# 你好，我是天禄 🐾
 
-::github{repo="LyraVoid/Shirone"}
+欢迎来到天禄的小天地。这里收藏灵感、笔记和小小的好奇，也给认真写下的文字留一个安静的位置。
 
-## ✦ Design & Philosophy
+喜欢简洁的表达，也珍惜温暖的分享。愿每次翻页，都能带走一点有用的东西，或一点轻松的心情。
 
-Shirone aims to combine the warmth of expressive anime aesthetics with the rigor of modern web engineering:
+## 关于这里
 
-- **Dynamic Chromatic Spell**: Full dynamic HCT palette generation responding seamlessly to light/dark modes and user preferences with zero layout shifts.
-- **Seamless Shell Navigation**: Persistent application shell driven by Swup for continuous music playback, smooth page transitions, and preserved state.
-- **Rich Story Grimoire**: Markdown and MDX authoring with KaTeX math, Mermaid diagrams, interactive admonitions, expressive code blocks, and adaptive image galleries.
-- **Zero Extra Burden**: Optional integrations (comments, analytics, music widgets) load dynamically on demand — zero DOM footprint and zero bundle overhead when disabled.
+奶油般的暖色，配一点天青；少一点打扰，多一点从容。从[第一封信](/posts/hello-tianlu/)开始，慢慢整理这间小书房。
 
-## ✦ Tech Stack
+## 致谢与说明
 
-- **Framework**: [Astro 7](https://astro.build/) & [Svelte 5](https://svelte.dev/) (Runes-driven islands)
-- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/) & [Stylus](https://stylus-lang.com/)
-- **Design Standard**: [Material 3 Expressive](https://m3.material.io/)
-- **Typography**: Outfit & Yozai (悠哉圆体) with automated build-time subsetting
-- **Search Engine**: [Pagefind](https://pagefind.app/) offline full-text search
+本站基于开源主题 [Shirone](https://github.com/LyraVoid/Shirone)。感谢主题与相关开源项目贡献者。
 
-## ✦ Credits
-
-- **Font**: [Yozai Font (悠哉字体)](https://github.com/lxgw/yozai-font) by [lxgw](https://github.com/lxgw)
+头像由心安提供，采用《有兽焉》角色形象，相关权利归原权利人所有；本站不代表漫画官方。
