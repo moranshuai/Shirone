@@ -15,6 +15,7 @@ import {
 	siteConfig,
 	umamiConfig,
 } from "@/config";
+import { xfMusicConfig } from "@/config/xfMusicConfig";
 import type { SidebarPage } from "@/types/sidebarConfig";
 import {
 	AUTO_MODE,
@@ -49,6 +50,10 @@ interface Props {
 
 let { title, banner, ogImage, description, lang, setOGTypeArticle, page } =
 	Astro.props;
+
+const XfMusicRuntime = xfMusicConfig.enable
+	? (await import("@components/system/XfMusicRuntime.astro")).default
+	: null;
 
 const initialPage =
 	page ?? (pathsEqual(Astro.url.pathname, url("/")) ? "home" : undefined);
@@ -233,6 +238,7 @@ const defaultSchemeStyle = createDefaultSchemeStyle();
 		data-banner-has-mobile={String(hasMobileBanner)}
 	>
 		<ConfigCarrier></ConfigCarrier>
+		{XfMusicRuntime && <XfMusicRuntime playlistId={xfMusicConfig.playlistId} />}
 		{umamiOptions && <UmamiRuntime />}
 		{textureEnabled && (
 			<div

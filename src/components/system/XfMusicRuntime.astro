@@ -1,0 +1,22 @@
+---
+import I18nKey from "@/i18n/i18nKey";
+import { i18n } from "@/i18n/translation";
+
+interface Props {
+	playlistId: string;
+}
+const { playlistId } = Astro.props;
+---
+<div data-xf-music-runtime data-playlist-id={playlistId} data-lyrics-label={i18n(I18nKey.musicShowLyrics)}></div>
+<script>
+	const host = document.querySelector<HTMLElement>("[data-xf-music-runtime]");
+	if (host) {
+		const start = () =>
+			void import("@utils/xf-music-runtime").then(({ mountXfMusic }) =>
+				mountXfMusic(host),
+			);
+		if ("requestIdleCallback" in window)
+			window.requestIdleCallback(start, { timeout: 1500 });
+		else setTimeout(start, 0);
+	}
+</script>

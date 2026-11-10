@@ -1,0 +1,7 @@
+XF Music Player 1.0.8 — Copyright 小枫 and contributors.
+Licensed under GNU LGPL v3; see LICENSE in this directory.
+Upstream corresponding source/distribution: https://github.com/s33806/music-player
+Package: https://www.npmjs.com/package/xf-music-player/v/1.0.8
+The dependency is unmodified; the site loads it separately via dynamic ESM import.
+You may replace/rebuild the dependency in this site's source and rebuild the site.
+Site adapter/theme changes are in src/utils/xf-music-*.ts. No music rights are granted.

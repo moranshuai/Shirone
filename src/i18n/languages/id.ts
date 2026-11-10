@@ -240,6 +240,7 @@ export const id: Translation = {
 	[Key.musicProgress]: "Progres: {current} dari {duration}",
 	[Key.musicVolume]: "Volume: {volume}",
 	[Key.musicShowPlaylist]: "Tampilkan daftar putar",
+	[Key.musicShowLyrics]: "Tampilkan lirik",
 	[Key.musicHidePlaylist]: "Sembunyikan daftar putar",
 	[Key.musicEmpty]: "Tidak ada lagu dalam daftar putar",
 	[Key.musicLoading]: "Memuat musik...",

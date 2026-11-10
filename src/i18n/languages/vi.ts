@@ -238,6 +238,7 @@ export const vi: Translation = {
 	[Key.musicProgress]: "Tiến trình: {current} / {duration}",
 	[Key.musicVolume]: "Âm lượng: {volume}",
 	[Key.musicShowPlaylist]: "Hiện danh sách phát",
+	[Key.musicShowLyrics]: "Hiện lời bài hát",
 	[Key.musicHidePlaylist]: "Ẩn danh sách phát",
 	[Key.musicEmpty]: "Danh sách phát chưa có bài hát",
 	[Key.musicLoading]: "Đang tải nhạc...",

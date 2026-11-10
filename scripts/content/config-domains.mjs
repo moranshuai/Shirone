@@ -30,6 +30,12 @@ export const GENERATED_CONFIG_FILE = "src/user/user-config.ts";
 
 /** @type {readonly ConfigDomain[]} */
 export const CONFIG_DOMAINS = Object.freeze([
+	{
+		key: "xfMusic",
+		file: "xf-music",
+		type: "XfMusicConfig",
+		module: "@/types/xfMusicConfig",
+	},
 	{ key: "site", file: "site", type: "SiteConfig", module: "@/types/config" },
 	{
 		key: "permalink",
