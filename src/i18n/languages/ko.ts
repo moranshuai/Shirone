@@ -235,6 +235,7 @@ export const ko: Translation = {
 	[Key.musicProgress]: "재생 위치: {current} / {duration}",
 	[Key.musicVolume]: "볼륨: {volume}",
 	[Key.musicShowPlaylist]: "재생 목록 표시",
+	[Key.musicShowLyrics]: "가사 표시",
 	[Key.musicHidePlaylist]: "재생 목록 숨기기",
 	[Key.musicEmpty]: "재생 목록에 곡이 없습니다",
 	[Key.musicLoading]: "음악을 불러오는 중...",

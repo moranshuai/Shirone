@@ -238,6 +238,7 @@ export const es: Translation = {
 	[Key.musicProgress]: "Progreso: {current} de {duration}",
 	[Key.musicVolume]: "Volumen: {volume}",
 	[Key.musicShowPlaylist]: "Mostrar lista de reproducción",
+	[Key.musicShowLyrics]: "Mostrar letras",
 	[Key.musicHidePlaylist]: "Ocultar lista de reproducción",
 	[Key.musicEmpty]: "No hay pistas en la lista de reproducción",
 	[Key.musicLoading]: "Cargando música...",

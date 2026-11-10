@@ -227,6 +227,7 @@ enum I18nKey {
 	musicProgress = "musicProgress",
 	musicVolume = "musicVolume",
 	musicShowPlaylist = "musicShowPlaylist",
+	musicShowLyrics = "musicShowLyrics",
 	musicHidePlaylist = "musicHidePlaylist",
 	musicEmpty = "musicEmpty",
 	musicLoading = "musicLoading",

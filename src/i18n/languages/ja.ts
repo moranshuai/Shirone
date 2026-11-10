@@ -235,6 +235,7 @@ export const ja: Translation = {
 	[Key.musicProgress]: "再生位置: {current} / {duration}",
 	[Key.musicVolume]: "音量: {volume}",
 	[Key.musicShowPlaylist]: "プレイリストを表示",
+	[Key.musicShowLyrics]: "歌詞を表示",
 	[Key.musicHidePlaylist]: "プレイリストを非表示",
 	[Key.musicEmpty]: "プレイリストに曲がありません",
 	[Key.musicLoading]: "音楽を読み込み中...",

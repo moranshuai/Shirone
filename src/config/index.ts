@@ -77,3 +77,5 @@ export {
 	resolveUmamiOptions,
 	umamiConfig,
 } from "./umamiConfig";
+
+export { xfMusicConfig } from "./xfMusicConfig";

@@ -237,6 +237,7 @@ export const en: Translation = {
 	[Key.musicProgress]: "Progress: {current} of {duration}",
 	[Key.musicVolume]: "Volume: {volume}",
 	[Key.musicShowPlaylist]: "Show playlist",
+	[Key.musicShowLyrics]: "Show lyrics",
 	[Key.musicHidePlaylist]: "Hide playlist",
 	[Key.musicEmpty]: "No tracks in the playlist",
 	[Key.musicLoading]: "Loading music...",

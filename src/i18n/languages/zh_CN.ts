@@ -228,6 +228,7 @@ export const zh_CN: Translation = {
 	[Key.musicProgress]: "播放进度：{current} / {duration}",
 	[Key.musicVolume]: "音量：{volume}",
 	[Key.musicShowPlaylist]: "显示播放列表",
+	[Key.musicShowLyrics]: "显示歌词",
 	[Key.musicHidePlaylist]: "隐藏播放列表",
 	[Key.musicEmpty]: "播放列表暂无歌曲",
 	[Key.musicLoading]: "正在加载音乐...",

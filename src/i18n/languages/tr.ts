@@ -238,6 +238,7 @@ export const tr: Translation = {
 	[Key.musicProgress]: "İlerleme: {current} / {duration}",
 	[Key.musicVolume]: "Ses düzeyi: {volume}",
 	[Key.musicShowPlaylist]: "Çalma listesini göster",
+	[Key.musicShowLyrics]: "Şarkı sözlerini göster",
 	[Key.musicHidePlaylist]: "Çalma listesini gizle",
 	[Key.musicEmpty]: "Çalma listesinde parça yok",
 	[Key.musicLoading]: "Müzik yükleniyor...",

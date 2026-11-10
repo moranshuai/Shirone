@@ -227,6 +227,7 @@ export const th: Translation = {
 	[Key.musicProgress]: "เวลาเล่น: {current} / {duration}",
 	[Key.musicVolume]: "ระดับเสียง: {volume}",
 	[Key.musicShowPlaylist]: "แสดงรายการเพลง",
+	[Key.musicShowLyrics]: "แสดงเนื้อเพลง",
 	[Key.musicHidePlaylist]: "ซ่อนรายการเพลง",
 	[Key.musicEmpty]: "ไม่มีเพลงในรายการ",
 	[Key.musicLoading]: "กำลังโหลดเพลง...",
